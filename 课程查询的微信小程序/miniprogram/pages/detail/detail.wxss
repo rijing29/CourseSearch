@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7%;
+}
+.form_control{
+  display: flex;
+  background-color: #E6F3F9;
+  padding-left: 25px;
+  height: 700px;
+}
+input{
+  width: 274px;
+}

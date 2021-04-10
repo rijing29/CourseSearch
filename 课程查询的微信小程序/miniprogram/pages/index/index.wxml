@@ -1,0 +1,43 @@
+<view class="box">
+  <view class="container">
+    <view class="img_con">
+      <image class="img_size1" src="../../images/logo2.png"></image>
+      <image class="img_size2" src="../../images/logo1.png"></image>
+    </view>
+    <form bindsubmit="submit">
+      <view class="section">
+        <view class="section__title">周次：</view>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange"  value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker" >
+            当前选择：<input type="text" disabled='disabled' name="class_personal" value="{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}"/> 
+          </view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">星期：</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{weeksarray}}">
+          <view class="picker">
+            当前选择：<input type="text" disabled='disabled' name="week" value="{{weeksarray[index]}}"/> 
+          </view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">节次：</view>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange2"  value="{{classmultiIndex}}" range="{{classmultiArray}}">
+          <view class="picker" >
+            当前选择：<input type="text" disabled='disabled' name="part" value="{{classmultiArray[0][classmultiIndex[0]]}}-{{classmultiArray[1][classmultiIndex[1]]}}"/> 
+          </view>
+        </picker>
+      </view>
+      <view class="section">
+        <view class="section__title">学院：</view>
+        <picker bindchange="bindPickerChange2" value="{{schoolIndex}}" range="{{schoolsarray}}">
+          <view class="picker" >
+            当前选择：<input type="text" disabled='disabled' name="school" value="{{schoolsarray[schoolIndex]}}"/>
+          </view>
+        </picker>
+      </view>
+      <button style="width:100%;margin-top:5%" form-type="submit" type="primary">查询</button>
+    </form>
+  </view>
+</view>

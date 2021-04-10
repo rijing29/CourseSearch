@@ -1,0 +1,9 @@
+<view class="container">
+  <image src="../../images/nepu.png"></image>
+  <view class="button_con">
+    <!-- 条件查询 -->
+    <button bindtap="condtion_search" type="default">条件查询</button>
+    <!-- 查询全部 -->
+    <button bindtap="all_search" type="primary">查询全部</button>
+  </view>
+</view>

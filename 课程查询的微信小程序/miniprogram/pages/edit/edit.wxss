@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 7%;
+  margin-top: 2%;
+}
+.form_control{
+  display: flex;
+  background-color: #E6F3F9;
+  padding-left: 25px;
+  height: 800px;
+}
+input{
+  width: 274px;
+  border-bottom: 1px solid black;
+}

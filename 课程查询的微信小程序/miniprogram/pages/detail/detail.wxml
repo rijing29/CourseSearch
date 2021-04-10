@@ -1,0 +1,14 @@
+<view>
+  <form action=""  class="form_control">
+    <view class="container"> 课程编码： <input type="text" name="" id="" value="{{course_id}}"/></view>
+    <view class="container"> 教学班： <input type="text" name="" id="" value="{{class_name}}"/></view>
+    <view class="container"> 总学时： <input type="text" name="" id="" value="{{total_hour}}"/></view>
+    <view class="container"> 学分： <input type="text" name="" id="" value="{{credit}}"/></view>
+    <view class="container"> 课程性质： <input type="text" name="" id="" value="{{character_class}}"/></view>
+    <view class="container"> 上课专业： <input type="text" name="" id="" value="{{class_major}}"/></view>
+    <view class="container"> 教师工号： <input type="text" name="" id="" value="{{teacher_id}}"/></view>
+    <view class="container"> 排课周次： <input type="text" name="" id="" value="{{class_plain}}"/></view>
+    <view class="container"> 开课学院： <input type="text" name="" id="" value="{{school}}"/></view>
+    <button type="default" wx:if="{{authority}}" bindtap="edit">修改</button>
+  </form>
+</view>  

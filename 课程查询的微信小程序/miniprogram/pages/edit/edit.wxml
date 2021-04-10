@@ -1,0 +1,20 @@
+<view>
+  <form wx:for="{{courseInfo}}" bindsubmit="submit" class="form_control">
+    <view class="container"> 上课时间地点： <input type="text" name="detail" id="" value="{{item.detail}}" placeholder="例：周日 1-4节【地科馆401】/周三 1-2;周四 1-2节【地科馆401】"/></view>
+    <view class="container"> 上课时间地点： <input type="text" name="detail2" id="" value="{{item.detail2}}" placeholder="例：周日 1-4节【地科馆401】/周三 1-2;周四 1-2节【地科馆401】"/></view>
+    <view class="container"> 任务计划周次: <input type="text" name="class_personal" id="" value="{{item.class_personal}}" placeholder="例：1-18，1-8"/></view>
+    <view class="container"> 课程名称: <input type="text" name="course_name" id="" value="{{item.course_name}}" placeholder="例：数据仓库"/></view>
+    <view class="container"> 教师名称： <input type="text" name="teacher" id="" value="{{item.teacher}}" placeholder="例：李春生"/></view>
+    <view class="container"> 课程性质： <input type="text" name="character_class" id="" value="{{item.character_class}}" placeholder="例：专业学位课/学业学位课"/></view>
+    <view class="container"> 上课专业： <input type="text" name="class_major" id="" value="{{item.class_major}}" placeholder="例：2020-地质资源与地质工程（博）"/></view>
+    <view class="container"> 教师工号： <input type="text" name="teacher_id" id="" value="{{item.teacher_id}}" placeholder="例：20121515"/></view>
+    <view class="container"> 排课周次： <input type="text" name="class_plain" id="" value="{{item.class_plain}}" placeholder="例：1-18"/></view>
+    <view class="container"> 开课学院： <input type="text" name="school" id="" value="{{item.school}}" placeholder="例：计算机信息与技术学院"/></view>
+    <view class="container"> 选课人数： <input type="text" name="people" id="" value="{{item.people}}" placeholder="例：20"/></view>
+    <view class="container"> 课程编码： <input type="text" name="course_id" id="" value="{{item.course_id}}" placeholder="例：B011515	"/></view>
+    <view class="container"> 教学班： <input type="text" name="class_name" id="" value="{{item.class_name}}" placeholder="例：石油地质学研究进展 1班"/></view>
+    <view class="container"> 总学时： <input type="text" name="total_hour" id="" value="{{item.total_hour}}" placeholder="例：32"/></view>
+    <view class="container"> 学分： <input type="text" name="credit" id="" value="{{item.credit}}" placeholder="例：2"/></view>
+    <button form-type="submit" type="default" bindtap="edit">保存</button>
+  </form>
+</view>  

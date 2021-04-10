@@ -1,0 +1,22 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">课程名称</view>
+    <view class="th ">教师名称</view>
+    <view class="th">上课时间地点</view>
+    <view class="th ">选课人数</view>
+  </view>
+  <block wx:for="{{courseInfo}}">
+    <view bindtap="detail" data-index="{{index}}" class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.course_name}}</view>
+      <view class="td">{{item.teacher}}</view>
+      <view class="td">{{item.detail}}</view>
+      <view class="td">{{item.people}}</view>
+    </view>
+    <view  bindtap="detail" data-index="{{index}}" class="tr" wx:else>
+      <view class="td">{{item.course_name}}</view>
+      <view class="td">{{item.teacher}}</view>
+      <view class="td">{{item.detail}}</view>
+      <view class="td">{{item.people}}</view>
+    </view>
+  </block>
+</view>

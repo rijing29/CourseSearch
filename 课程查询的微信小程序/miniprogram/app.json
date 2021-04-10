@@ -1,0 +1,23 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/upload/upload",
+    "pages/show/show",
+    "pages/detail/detail",
+    "pages/edit/edit",
+    "pages/choose/choose",
+    "pages/all/all",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "课表查询",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
